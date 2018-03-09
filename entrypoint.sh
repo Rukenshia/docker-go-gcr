@@ -13,4 +13,4 @@ gcloud auth activate-service-account --key-file $file
 
 export GCR_SERVICE_ACCOUNT=""
 
-exec "$@"
+/usr/local/bin/docker-entrypoint.sh "$@"

@@ -1,6 +1,6 @@
 FROM docker:latest
 RUN apk update && apk add \
-    go python2 ca-certificates
+    go python2 ca-certificates make
 
 ADD https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-192.0.0-linux-x86_64.tar.gz gcloud-sdk.tar.gz
 RUN tar -xzf gcloud-sdk.tar.gz
